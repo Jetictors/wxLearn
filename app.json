@@ -1,0 +1,23 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/component/text/text",
+    "pages/component/icon/icon",
+    "pages/component/button/button",
+    "pages/component/image/image",
+    "pages/component/richText/richText",
+    "pages/component/progress/progress",
+    "pages/component/switch/switch",
+    "pages/component/input/input",
+    "pages/component/checkBox/checkBox",
+    "pages/component/radioButton/radioButton",
+    "pages/component/slider/slider",
+    "pages/component/textarea/textarea"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#EA6F5A",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": ""
+  },
+  "sitemapLocation": "sitemap.json"
+}

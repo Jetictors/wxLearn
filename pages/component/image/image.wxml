@@ -1,0 +1,49 @@
+<scroll-view class='group'>
+
+  <text class='title'>1、属性介绍</text>
+  <view class='area'>
+    <text>src : string类型，图片资源地址
+      mode：string类型, 图片裁剪、缩放模式。默认为scaleToFill，下面会展示效果
+      lazy-load：是否懒加载，默认为false
+      binderror : 发生错误时触发事件
+      bindload : 当图片载入完毕时触发事件
+    </text>
+  </view>
+
+  <text class='title'>2、实例讲解</text>
+  <view class='area'>
+
+    <view>
+      <text class='subTitle'>例1：原图加载，默认大小为width : 300px, heighe : 255px</text>
+      <image src="{{src}}" />
+    </view>
+
+    <view>
+      <text class='subTitle'>例2：裁剪、缩放</text>
+      <view wx:for="{{array}}" wx:for-item="item">
+        <view>{{item.text}}</view>
+        <view>
+          <image 
+          style="width: 200px; height: 200px; background-color: #eeeeee;" 
+          mode="{{item.mode}}" 
+          src="{{src}}">
+          </image>
+        </view>
+      </view>
+    </view>
+
+    <view>
+       <text class='subTitle'>例3：事件监听, 这里只举例一个</text>
+       <view>
+          <image 
+          style="width: 200px; height: 200px; background-color: #eeeeee;" 
+          mode="aspectFill" 
+          src="{{src}}"
+          bindtap='onClickImg'>
+          </image>
+        </view>
+    </view>
+
+  </view>
+
+</scroll-view>

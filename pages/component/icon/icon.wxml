@@ -1,0 +1,46 @@
+<view class='group'>
+
+  <text class='title'>1、属性介绍</text>
+  <view class='area'>
+    <text>type: 官网提供了9个，其有效值请自行看官网。
+      color： 图标颜色值
+      size: 图标大小，默认为23
+    </text>
+  </view>
+
+  <text class='title'>2、实例讲解</text>
+  <view class='area'>
+    <view>
+      <text class='subTitle'>例1： 单个使用\n</text>
+      <icon type='info' size='24' color='rad' />
+    </view>
+
+    <view>
+      <text class='subTitle'>例2： 多个使用\n</text>
+
+      <view>
+        <block wx:for="{{iconColor}}">
+          <icon type="success" size="24" color="{{item}}" />
+        </block>
+      </view>
+
+      <view>
+        <block wx:for="{{iconType}}">
+          <icon type="{{item}}" size="24" color="green" />
+        </block>
+      </view>
+
+      <view>
+        <block wx:for="{{iconSize}}">
+          <icon type="success" size="{{item}}" color="red" />
+        </block>
+      </view>
+
+    </view>
+  </view>
+
+
+
+
+
+</view>

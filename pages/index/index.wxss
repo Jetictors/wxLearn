@@ -1,0 +1,6 @@
+.btn{
+  width: 80%;
+  font-size: 14px;
+  color: salmon;
+  margin-top: 9px;
+}

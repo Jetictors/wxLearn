@@ -1,0 +1,26 @@
+<scroll-view>
+  <button class='.btn' bindtap='startText'>文本组件（Text）</button>
+
+  <button class='.btn' bindtap='startIcon'>图标组件（Icon）</button>
+
+  <button class='.btn' bindtap='startButton'>按钮组件（Button）</button>
+
+  <button class='.btn' bindtap='startImage'>图片组件（Image）</button>
+
+  <button class='.btn' bindtap='startRichText'>富文本组件（RichText）</button>
+
+  <button class='.btn' bindtap='startProgress'>进度条组件（Progress）</button>
+
+  <button class='.btn' bindtap='startSwitch'>切换组件（Switch）</button>
+
+  <button class='.btn' bindtap='startInput'>输入框组件（Input）</button>
+
+  <button class='.btn' bindtap='startCheckBox'>多选框组件（CheckBox）</button>
+
+  <button class='.btn' bindtap='startRadioButton'>单选框组件（RadioButton）</button>
+
+  <button class='.btn' bindtap='startSlider'>滑动组件（Slider）</button>
+
+  <button class='.btn' bindtap='startTextarea'>多行输入框组件（Textarea）</button>
+
+</scroll-view>

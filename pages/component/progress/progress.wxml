@@ -1,0 +1,49 @@
+<scroll-view class='group'>
+
+  <text class='title'>1、属性介绍</text>
+  <view class='area'>
+    <text>percent : number类型，当前百分比 0 - 100
+      show-info：boolean类型, 是否显示进度条右侧百分比，默认为false
+      border-radius：number/string类型，圆角大小
+      font-size : number/string类型，进度条右侧百分比字体大小， 默认为16px
+      stroke-width : number/string类型, 进度条线宽，默认为6px
+      color/activeColor : 已选择的进度条颜色
+      backgroundColor : 未选择的进度条颜色
+      active : 是否显示从左到右的动画，默认为false
+      active-mode : 动画执行模式，提供两种，backwards(从头开始)，forwards（从上次继续）。默认为backwards
+      bindactiveend : 动画完成事件
+    </text>
+  </view>
+
+  <text class='title'>2、实例讲解</text>
+  <view class='area'>
+
+    <view>
+      <text class='subTitle'>例1: 属性设置</text>
+      <progress 
+         stroke-width='12'
+         backgroundColor='#eee' 
+         activeColor='#999'
+         percent='40'
+         show-info='true'
+         font-size='10'
+         active-mode='backwards'
+         border-radius='20'
+         active='true'>
+      </progress>
+    </view>
+
+    <view>
+      <text class='subTitle'>例2： 动画执行完毕事件</text>
+      <progress
+        percent='80'
+        show-info='true'
+        active='true'
+        active-mode='backwards'
+        bindactiveend='change'>
+      </progress>
+    </view>
+
+  </view>
+
+</scroll-view>

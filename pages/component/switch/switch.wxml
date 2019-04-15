@@ -1,0 +1,41 @@
+<scroll-view class='group'>
+
+  <text class='title'>1、属性介绍</text>
+
+  <view class='area'>
+    <text>select ： 选中状态，默认为false
+      isabled : 禁用状态, 默认为false
+      type : 类型，支持switch和checkbox类型，默认为switch
+      color ： switch 的颜色，同 css 的 color
+      bindchange : checked 改变时触发 change 事件，event.detail={value}
+    </text>
+  </view>
+
+  <text class='title'>2、实例讲解</text>
+
+  <view class='area'>
+
+    <view>
+      <text class='subTitle'>例1 ： 设置一个type为switch, 颜色为红色，选中状态为true的切换组件\n</text>
+      <switch checked='true' type='switch' color='red' />
+    </view>
+
+    <view>
+      <text class='subTitle'>例2 ： 设置一个type为checkbox, 颜色为绿色，选中状态为false, 禁用状态为true的切换组件\n</text>
+      <switch checked='false' type='checkbox' color='green' disabled='true' />
+    </view>
+
+    <view>
+      <text class='subTitle'>例3 ： 事件监听\n</text>
+      <switch bindchange='onViewChange' />
+    </view>
+
+  </view>
+
+
+
+
+
+
+
+</scroll-view>

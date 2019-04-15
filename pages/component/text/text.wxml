@@ -1,0 +1,48 @@
+<scroll-view class='group'>
+
+  <text class='title'>1、属性介绍：</text>
+  <view class='area'>
+    <text>selectable: 文本是否可选， 默认为false值 
+      space 是否显示连续空格，string类型，其合法值有：ensp、emsp、nbsp
+      decode: 是否解码，默认为false, 支持的格式有 &nbsp; &lt; &gt; &amp; &apos; &ensp; &emsp;
+    </text>
+  </view>
+
+  <text class='title'>2、实例讲解</text>
+  <view class='area'>
+
+    <view>
+      <text class='subTitle'>例1 ： 设置文本长按可选\n</text>
+      <text selectable='true'>我是长按可选文本，您长按我试试</text>
+    </view>
+
+    <view>
+      <text class='subTitle'>例2 ： 解码</text>
+      <text decode='true'>
+        "&nbsp （正常空格，随字体大小改变）" => &nbsp;
+        "&lt （小于符号）" => &lt;
+        "&gt （大于符号）" => &gt;
+        "&amp （地址符）" => &amp;
+        "&apos （单引号）" => &apos;
+        "&ensp （半角空格，中文字符空格一半大小）" => &ensp;
+        "&emsp （全角空格，中文字符空格大小）" => &emsp;
+      </text>
+    </view>
+
+    <view>
+      <text class='subTitle'>例3 ： space属性使用\n</text>
+      <text space='nbsp'>我是nbsp空格， 测 试\n</text>
+      <text space='ensp'>我是ensp空格， 测 试\n</text>
+      <text space='emsp'>我是emsp空格， 测 试\n</text>
+    </view>
+
+    <view>
+      <text class='subTitle'>例4 ： 动态改变字体\n</text>
+      <text>我点击了{{number}}几次</text>
+      <button bindtap='add'>点击</button>
+      <button bindtap='clear'>清除</button>
+    </view>
+
+  </view>
+
+</scroll-view>

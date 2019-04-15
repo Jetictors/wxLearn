@@ -1,0 +1,20 @@
+.group{
+  padding: 12px;
+}
+
+.title{
+  color: red;
+  size: 14px;
+  margin-top: 9px;
+}
+
+.subTitle{
+  color: darkorange;
+  size: 12px;
+  margin-top: 6px;
+}
+
+.area{
+  padding: 6px;
+  background: azure;
+}
